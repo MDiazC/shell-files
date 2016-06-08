@@ -131,7 +131,7 @@ function parse_main() {
 echo "Iniciando script... "
 
 #Create a file with the url of the hotel and the hotel id through the next sql, we save the results in the file "list_booking_url" and call the main function
-#/usr/local/mysql/bin/mysql -u"tsocial" -p"KSaA8shHj2" --database troovel_replica -e "SELECT h.url, h.hotel_id, m.guid FROM troovel_replica.booking_hotels AS h INNER JOIN troovel_social.mapping AS m ON m.external_id = h.hotel_id WHERE h.hotel_id NOT IN(SELECT hotel_id FROM troovel_replica.booking_hotels_downloaded_file) AND m.source='BOOKING'" > list_booking_url
+#/usr/local/mysql/bin/mysql -u"tsocial" -p"XXXX" --database troovel_replica -e "SELECT h.url, h.hotel_id, m.guid FROM troovel_replica.booking_hotels AS h INNER JOIN troovel_social.mapping AS m ON m.external_id = h.hotel_id WHERE h.hotel_id NOT IN(SELECT hotel_id FROM troovel_replica.booking_hotels_downloaded_file) AND m.source='BOOKING'" > list_booking_url
 
 echo "URL's extraidas de la base de datos"
 
